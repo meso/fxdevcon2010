@@ -1,12 +1,9 @@
-script(type='text/javascript', src='/javascripts/himitsu.js')
-#header
-  p http://sakura.mesolabs.com/fxdevcon2010 閲覧者数:
-    span#count
-    人
-#contents
-  #page1.slide.active
-    こんにちは
-  #page2.slide
-    はじめまして
-  #page3.slide
-    さようなら
+!!! 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js')
+    script(type='text/javascript', src='/socket.io/socket.io.js')
+    script(type='text/javascript', src='/javascripts/himitsu.js')
+  body!= body

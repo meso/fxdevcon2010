@@ -30,7 +30,7 @@ app.configure('production', function(){
 
 // Routes
 
-app.get('/', function(req, res){
+app.get('/fxdevcon2010', function(req, res){
   res.render('index.jade', {
     locals: {
         title: 'fxdevcon2010'
@@ -38,11 +38,12 @@ app.get('/', function(req, res){
   });
 });
 
-app.get('/himitsu', function(req, res) {
-  res.render('himitsu.jade', {
+app.get('/fxdevcon2010/himitsu', function(req, res) {
+  res.render('index.jade', {
     locals: {
       title: 'fxdevcon2010 admin'
-    }
+    },
+    layout: 'himitsu.jade'
   });
 });
 

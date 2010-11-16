@@ -1,4 +1,4 @@
-var socket = new io.Socket('localhost'),
+var socket = new io.Socket('sakura.mesolabs.com'),
     json = JSON.stringify;
 
 socket.connect();
