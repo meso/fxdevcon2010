@@ -48,3 +48,6 @@ Express server listening on port 80
 18 Nov 22:54:15 - Client 32841987046413124 disconnected
 18 Nov 22:54:16 - Initializing client with transport "flashsocket"
 18 Nov 22:54:16 - Client 6871632307302207 connected
+18 Nov 22:54:59 - Client 6871632307302207 disconnected
+18 Nov 22:54:59 - Initializing client with transport "flashsocket"
+18 Nov 22:54:59 - Client 24761667009443045 connected
