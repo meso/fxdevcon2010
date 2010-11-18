@@ -1,0 +1,50 @@
+
+node.js:63
+    throw e;
+    ^
+Error: EACCES, Permission denied
+    at Server.<anonymous> (net:1244:14)
+    at Server.<anonymous> (/home/meso/work/nave/installed/0.2.5/lib/node/.npm/connect/0.3.0/package/lib/connect/index.js:149:34)
+    at Server.listen (/home/meso/work/nave/installed/0.2.5/lib/node/.npm/express/1.0.0/package/lib/express/server.js:94:35)
+    at Object.<anonymous> (/home/meso/work/fxdevcon2010/app.js:54:7)
+    at Module._compile (node.js:462:23)
+    at Module._loadScriptSync (node.js:469:10)
+    at Module.loadSync (node.js:338:12)
+    at Object.runMain (node.js:522:24)
+    at Array.<anonymous> (node.js:756:12)
+    at EventEmitter._tickCallback (node.js:55:22)
+Express server listening on port 80
+18 Nov 22:34:20 - socket.io ready - accepting connections
+Express server listening on port 80
+18 Nov 22:34:26 - socket.io ready - accepting connections
+18 Nov 22:34:45 - Initializing client with transport "xhr-polling"
+18 Nov 22:34:45 - Client 43702493654564023 connected
+18 Nov 22:34:50 - Initializing client with transport "websocket"
+18 Nov 22:34:50 - Client 14523378782905638 connected
+18 Nov 22:35:02 - Client 14523378782905638 disconnected
+18 Nov 22:35:03 - Initializing client with transport "websocket"
+18 Nov 22:35:03 - Client 37101625418290496 connected
+18 Nov 22:35:33 - Client 37101625418290496 disconnected
+18 Nov 22:35:33 - Initializing client with transport "websocket"
+18 Nov 22:35:33 - Client 6621661810204387 connected
+18 Nov 22:36:46 - Initializing client with transport "websocket"
+18 Nov 22:36:46 - Client 42307587270624936 connected
+18 Nov 22:36:54 - Initializing client with transport "websocket"
+18 Nov 22:36:54 - Client 670371935935691 connected
+18 Nov 22:42:33 - Initializing client with transport "websocket"
+18 Nov 22:42:33 - Client 9394205592107028 connected
+18 Nov 22:42:35 - Client 9394205592107028 disconnected
+18 Nov 22:47:41 - Initializing client with transport "flashsocket"
+18 Nov 22:47:41 - Client 32841987046413124 connected
+18 Nov 22:52:25 - Client 6621661810204387 disconnected
+18 Nov 22:52:27 - Initializing client with transport "websocket"
+18 Nov 22:52:27 - Client 7009921090211719 connected
+18 Nov 22:53:04 - Client 7009921090211719 disconnected
+18 Nov 22:53:06 - Initializing client with transport "websocket"
+18 Nov 22:53:06 - Client 03908174182288349 connected
+18 Nov 22:53:10 - Initializing client with transport "xhr-polling"
+18 Nov 22:53:10 - Client 06110993446782231 connected
+18 Nov 22:53:17 - Client 43702493654564023 disconnected
+18 Nov 22:54:15 - Client 32841987046413124 disconnected
+18 Nov 22:54:16 - Initializing client with transport "flashsocket"
+18 Nov 22:54:16 - Client 6871632307302207 connected
