@@ -1,14 +1,77 @@
 body {
-  padding: 50px;
+  padding: 0px;
+  margin: 0px;
   font: 14px "Lucida Grande", "Helvetica Nueue", Arial, sans-serif;
 }
 .slide {
   display: none;
-  height: 80%;
-  width: 80%;
+  height: 90%;
+  width: 100%;
   position: absolute;
+  background-color: #000000;
   font-size: 120px;
+  color: #FFFFFF;
+}
+.slide a:link, .slide a:visited, .slide a:active {
+  color: #FFFFFF;
+}
+.slide span {
+  margin: 0px;
+  padding: 0px;
+}
+.slide .small {
+  font-size: 80px;
+}
+.slide .code {
+  font-size: 60px;
+}
+.slide .ore {
+  color: #FF6800;
+}
+.slide .mizu {
+  color: #00FFFF;
+}
+.slide .center {
+  text-align: center;
+}
+.slide .left {
+  text-align: left;
+}
+.slide .bottom {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  font-size: 60px;
+}
+.slide .footer_left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 24px;
+}
+.slide .footer_right {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
 }
 .active {
   display: block;
+}
+#header {
+  width: 99%;
+  height: 9%;
+  margin: 5px;
+  background-color: #FFFFFF;
+  font-size: 32px;
+}
+#header div#url {
+  margin: 0px auto 0px 10px;
+  text-align: left;
+  float: left;
+}
+#header div#ppl {
+  margin: 0px 0px 0px auto;
+  text-align: right;
+  float: clear;
 }

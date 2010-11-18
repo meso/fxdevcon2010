@@ -19,13 +19,30 @@ function show(p) {
 }
 
 $(function() {
+  var winWidth = window.innerWidth;
+  document.addEventListener('touchstart', start, false);
+  document.addEventListener('touchmove', move, false);
+  document.addEventListener('touchend', end, false);
+  var startX, endX;
+  function start() {
+    startX = event.touches[0].pageX;
+  }
+  function move(e) {
+    endX = event.touches[0].pageX;
+  }
+  function end(e) {
+    if (endX - startX > 100) {
+      previous();
+    } else if (startX - endX > 100) {
+      next();
+    }
+  }
+
   $(document).keydown(function(e) {
     if (e.keyCode == 39) {
-      var p = next();
-      socket.send(json({page: p}));
+      next();
     } else if (e.keyCode == 37) {
-      var p = previous();
-      socket.send(json({page: p}));
+      previous();
     }
     return false;
   });
@@ -33,9 +50,12 @@ $(function() {
   function next() {
     var nowId = getNowId();
     var nextId = getNextId(nowId);
-    var result = activate(nextId);
-    if (result) {
-      inactivate(nowId);
+    if ($('#' + nextId).length) {
+      socket.send(json(
+        {page: nextId
+        ,next: nextId
+        ,now:  nowId}));
+      animateLeft(nowId, nextId);
       return nextId;
     } else {
       return nowId;
@@ -45,17 +65,16 @@ $(function() {
   function previous() {
     var nowId = getNowId();
     var prevId = getPrevId(nowId);
-    var result = activate(prevId);
-    if (result) {
-      inactivate(nowId);
+    if ($('#' + prevId).length) {
+      socket.send(json(
+        {page: prevId
+        ,prev: prevId
+        ,now:  nowId}));
+      animateRight(nowId, prevId);
       return prevId;
-    } else  {
+    } else {
       return nowId;
     }
-  }
-
-  function inactivate(id) {
-    $('#' + id).removeClass('active');
   }
 
   function getNowId() {
@@ -74,14 +93,24 @@ $(function() {
     return 'page' + p;
   }
 
-  function activate(id) {
-    id = '#' + id;
-    if ($(id).length) {
-      $(id).addClass('active');
-      return true;
-    } else {
-      return false;
-    }
+  function animateLeft(nowId, nextId) {
+    $('#' + nowId).animate(
+      {left: (winWidth * -1) + 'px'},
+      500,
+      function() { $(this).removeClass('active') });
+    $('#' + nextId).css('left', winWidth).addClass('active').animate(
+      {left: 0},
+      500);
+  }
+
+  function animateRight(nowId, prevId) {
+    $('#' + nowId).animate(
+      {left: (winWidth * 1) + 'px'},
+      500,
+      function() { $(this).removeClass('active') });
+    $('#' + prevId).css('left', -1 * winWidth).addClass('active').animate(
+      {left: 0},
+      500);
   }
 
 });

@@ -1,11 +1,262 @@
 #header
-  p http://sakura.mesolabs.com/fxdevcon2010 閲覧者数:
-    span#count
+  #url http://goo.gl/N6Nfu
+  #ppl 閲覧者数:
+    span#count 0
     人
 #contents
   #page1.slide.active
-    こんにちは
+    .center.small &nbsp;
+    .center 
+      span.mizu Node.js
+      にまつわる7つの
+      span.ore 誤解
+    .bottom Toshihiro Shimizu / @meso
+    .footer_left #fxdevcon2010
+    .footer_right page.1
   #page2.slide
-    はじめまして
+    .center 自己紹介
+    .center.small &nbsp;
+    .center.small Toshihiro Shimizu / @meso
+    .center.small dwango, java-ja
+    .center.small.mizu Node.js日本ユーザグループ
+    .footer_left #fxdevcon2010
+    .footer_right page.2
   #page3.slide
-    さようなら
+    .center.small &nbsp;
+    .center.small このプレゼン自体
+    .center.small
+      span.mizu Node.js
+      で作られています
+    .center.small &nbsp;
+    .center.small 私が手元で操作すると...
+    .footer_left #fxdevcon2010
+    .footer_right page.3
+  #page4.slide
+    .center &nbsp;
+    .center こんな風に
+    .footer_left #fxdevcon2010
+    .footer_right page.4
+  #page5.slide
+    .center &nbsp;
+    .center
+      span.mizu お手元
+      のPCやiPhoneの画面も
+    .footer_left #fxdevcon2010
+    .footer_right page.5
+  #page6.slide
+    .center &nbsp;
+    .center
+      span.ore 自動的
+      にページが切り替わります
+    .center.small これが...
+    .footer_left #fxdevcon2010
+    .footer_right page.6
+  #page7.slide
+    .center.small &nbsp;
+    .center
+      del Node.jsの力
+    .center
+      span.mizu WebSocket
+      の力
+    .center です
+    .footer_left #fxdevcon2010
+    .footer_right page.7
+  #page8.slide
+    .center 誤解1
+    .center.small &nbsp;
+    .center.small Node.jsはJavaScriptの
+    .center.small
+      span.mizu クライアントライブラリ
+      である
+    .footer_left #fxdevcon2010
+    .footer_right page.8
+  #page9.slide
+    .center &nbsp;
+    .center.small
+      | Node.jsは
+      span.ore サーバサイドJavaScript
+      です
+    .center.small ブラウザの外で動きます
+    .footer_left #fxdevcon2010
+    .footer_right page.9
+  #page10.slide
+    .center 誤解2
+    .center.small
+      | Node.jsは
+      span.mizu Webアプリケーションフレームワーク
+      だ
+    .center.small
+      | Node.jsはWebアプリケーション
+      span.ore しか
+      作れない
+    .footer_left #fxdevcon2010
+    .footer_right page.10
+  #page11.slide
+    .center &nbsp;
+    .center.small
+      | 普通に標準入出力とファイル入出力を扱えるので、
+      span.ore Perl
+      や
+      span.ore Ruby
+      の代替として使えます
+    .footer_left #fxdevcon2010
+    .footer_right page.11
+  #page12.slide
+    .center.small &nbsp;
+    .center.small
+      span.mizu Node.js製
+      のWebアプリケーションフレームワークも多数あります
+    .center.small
+      | C++で
+      span.mizu Addon
+      を書いて拡張できます
+    .footer_left #fxdevcon2010
+    .footer_right page.12
+  #page13.slide
+    .center 誤解3
+    .center.small &nbsp;
+    .center.small
+      | Node.jsはJavaScript
+    .center.small
+      | なので
+      span.ore 遅い
+    .footer_left #fxdevcon2010
+    .footer_right page.13
+  #page14.slide
+    .center.small &nbsp;
+    .center.small
+      | Apache, Mongrel, Thin, Nginxよりも
+      span.mizu 早い
+      というBenchmark
+    .center.small &nbsp;
+    .center.small 
+      span.mizu V8 Engine
+      と
+      span.ore イベント駆動I/O
+      の力
+    .footer_left #fxdevcon2010
+    .footer_right page.14
+  #page15.slide
+    .center 誤解4
+    .center.small &nbsp;
+    .center.small
+      | Node.jsのイベント駆動I/Oは
+      span.mizu コーディング
+      が難しい
+    .footer_left #fxdevcon2010
+    .footer_right page.15
+  #page16.slide
+    .center &nbsp;
+    .center.small
+      | イベント駆動I/Oは
+      span.mizu シングルスレッドモデル
+      なので
+      span.ore ブロック
+      されると性能が落ちる
+    .footer_left #fxdevcon2010
+    .footer_right page.16
+  #page17.slide
+    .center.small &nbsp;
+    .center.small
+      | 従来のイベント駆動I/Oフレームワークはブロックしないように
+      span.ore プログラマが注意
+      してコーディングする必要があった
+    .footer_left #fxdevcon2010
+    .footer_right page.17
+  #page18.slide
+    .center.small &nbsp;
+    .center.small
+      | Node.jsは
+      span.mizu Non-Blocking I/O
+      の使用を
+      span.ore 強制
+      するのでブロッキングの心配がない
+    .center.small
+      | マルチスレッドモデルの
+      span.ore 排他処理
+      の方がよっぽど大変
+    .footer_left #fxdevcon2010
+    .footer_right page.18
+  #page19.slide
+    .center 誤解5
+    .center.small
+      | Node.jsでは
+      span.mizu jQuery
+      のようなクライアントサイドの
+      span.mizu JavaScriptライブラリ
+      が使えない
+    .footer_left #fxdevcon2010
+    .footer_right page.19
+  #page20.slide
+    .center.small &nbsp;
+    .left.code
+      | npm install
+      span.mizu jquery
+    .left.code &nbsp;
+    .left.code
+      | var $ = require('
+      span.mizu jquery
+      ');
+    .left.code $('&lt;h1&gt;test&lt;/h1&gt;').appendTo('body');
+    .left.code console.log($('body').html());
+    .footer_left #fxdevcon2010
+    .footer_right page.20
+  #page21.slide
+    .center 誤解7
+    .center.small &nbsp;
+    .center.small
+      | Node.jsに手を出すにはまだ
+      span.ore 時期尚早
+      である 
+    .footer_left #fxdevcon2010
+    .footer_right page.21
+  #page22.slide
+    .center.small &nbsp;
+    .center.small
+      span.mizu @ryah
+      個人から
+      span.ore Joyent社
+      の主導へ
+    .center.small http://no.de/
+    .center.small &nbsp;
+    .center.small Yahoo!, GitHub, Palm... 
+    .footer_left #fxdevcon2010
+    .footer_right page.22
+  #page23.slide
+    .center 誤解7
+    .center.small &nbsp;
+    .center.small
+      | Node.jsは
+      span.ore 日本
+      では
+      span.mizu まだまだ
+      である
+    .footer_left #fxdevcon2010
+    .footer_right page.23
+  #page24.slide
+    .center.small &nbsp;
+    .center.small
+      | 日本ユーザグループ
+      span.mizu 197
+      名
+    .center.small
+      公式サイト,APIドキュメントは全て
+      span.ore 日本語化済
+    .center.small
+      span.mizu @yssk22
+      のハンズオン資料
+    .center.small
+      日本語の
+      span.ore 書籍
+      も......？
+    .footer_left #fxdevcon2010
+    .footer_right page.21
+  #page25.slide
+    .center &nbsp;
+    .center http://nodejs.jp/
+    .footer_left #fxdevcon2010
+    .footer_right page.22
+    
+ 
+
+
