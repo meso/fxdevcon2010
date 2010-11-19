@@ -1,0 +1,91 @@
+Express server listening on port 80
+19 Nov 16:00:45 - socket.io ready - accepting connections
+Express server listening on port 80
+19 Nov 16:00:48 - socket.io ready - accepting connections
+19 Nov 16:00:59 - Initializing client with transport "websocket"
+19 Nov 16:00:59 - Client 928669445682317 connected
+19 Nov 16:01:05 - Client 928669445682317 disconnected
+19 Nov 16:39:22 - Initializing client with transport "websocket"
+19 Nov 16:39:22 - Client 22236721217632294 connected
+19 Nov 16:39:29 - Initializing client with transport "websocket"
+19 Nov 16:39:29 - Client 1848437066655606 connected
+19 Nov 16:40:18 - Initializing client with transport "xhr-polling"
+19 Nov 16:40:18 - Client 09506654902361333 connected
+19 Nov 16:40:33 - Client 09506654902361333 disconnected
+19 Nov 16:40:46 - Client 1848437066655606 disconnected
+19 Nov 16:40:47 - Initializing client with transport "websocket"
+19 Nov 16:40:47 - Client 46080762846395373 connected
+19 Nov 16:40:49 - Client 22236721217632294 disconnected
+19 Nov 16:40:49 - Initializing client with transport "websocket"
+19 Nov 16:40:49 - Client 37514963443391025 connected
+19 Nov 16:41:00 - Initializing client with transport "xhr-polling"
+19 Nov 16:41:00 - Client 7118569288868457 connected
+19 Nov 16:41:53 - Client 7118569288868457 disconnected
+19 Nov 16:41:53 - Couldnt find client with session id "7118569288868457"
+19 Nov 16:41:57 - Couldnt find client with session id "7118569288868457"
+19 Nov 16:42:59 - Client 37514963443391025 disconnected
+19 Nov 16:42:59 - Initializing client with transport "websocket"
+19 Nov 16:42:59 - Client 7061840232927352 connected
+19 Nov 16:43:01 - Client 46080762846395373 disconnected
+19 Nov 16:43:01 - Initializing client with transport "websocket"
+19 Nov 16:43:01 - Client 05012160656042397 connected
+19 Nov 16:44:08 - Client 05012160656042397 disconnected
+19 Nov 16:44:10 - Client 7061840232927352 disconnected
+19 Nov 16:45:28 - Initializing client with transport "xhr-polling"
+19 Nov 16:45:28 - Client 9098994659725577 connected
+19 Nov 16:45:35 - Initializing client with transport "websocket"
+19 Nov 16:45:35 - Client 00493229553103447 connected
+19 Nov 16:46:14 - Client 00493229553103447 disconnected
+19 Nov 16:50:28 - Client 9098994659725577 disconnected
+19 Nov 16:50:37 - Couldnt find client with session id "9098994659725577"
+19 Nov 16:50:37 - Couldnt find client with session id "9098994659725577"
+19 Nov 16:50:38 - Couldnt find client with session id "9098994659725577"
+19 Nov 20:17:25 - Initializing client with transport "htmlfile"
+19 Nov 20:17:25 - Client 718291069380939 connected
+19 Nov 20:17:36 - Initializing client with transport "htmlfile"
+19 Nov 20:17:36 - Client 9843689356930554 connected
+19 Nov 20:17:43 - Client 718291069380939 disconnected
+19 Nov 20:17:52 - Initializing client with transport "htmlfile"
+19 Nov 20:17:52 - Client 2004396275151521 connected
+19 Nov 20:17:54 - Client 9843689356930554 disconnected
+19 Nov 20:18:01 - Initializing client with transport "htmlfile"
+19 Nov 20:18:01 - Client 6014252789318562 connected
+19 Nov 20:18:10 - Client 2004396275151521 disconnected
+19 Nov 20:18:11 - Initializing client with transport "htmlfile"
+19 Nov 20:18:11 - Client 20021633082069457 connected
+19 Nov 20:18:18 - Answering flash policy request inline
+19 Nov 20:18:19 - Client 6014252789318562 disconnected
+19 Nov 20:18:22 - Initializing client with transport "htmlfile"
+19 Nov 20:18:22 - Client 9238779847510159 connected
+19 Nov 20:18:29 - Client 20021633082069457 disconnected
+19 Nov 20:18:32 - Initializing client with transport "htmlfile"
+19 Nov 20:18:32 - Client 8071917414199561 connected
+19 Nov 20:18:40 - Client 9238779847510159 disconnected
+19 Nov 20:18:41 - Initializing client with transport "flashsocket"
+19 Nov 20:18:41 - Client 5261026278603822 connected
+19 Nov 20:18:50 - Client 8071917414199561 disconnected
+19 Nov 20:36:29 - Client 5261026278603822 disconnected
+19 Nov 21:34:37 - Initializing client with transport "websocket"
+19 Nov 21:34:37 - Client 5700601171702147 connected
+19 Nov 21:36:22 - Client 5700601171702147 disconnected
+19 Nov 22:03:42 - Initializing client with transport "xhr-polling"
+19 Nov 22:03:42 - Client 5898562644142658 connected
+19 Nov 22:04:45 - Client 5898562644142658 disconnected
+19 Nov 22:05:21 - Couldnt find client with session id "5898562644142658"
+19 Nov 22:05:22 - Couldnt find client with session id "5898562644142658"
+19 Nov 22:05:26 - Initializing client with transport "xhr-polling"
+19 Nov 22:05:26 - Client 25516710593365133 connected
+19 Nov 22:06:13 - Client 25516710593365133 disconnected
+19 Nov 22:06:38 - Couldnt find client with session id "25516710593365133"
+19 Nov 22:07:14 - Initializing client with transport "xhr-polling"
+19 Nov 22:07:14 - Client 24927972652949393 connected
+19 Nov 22:07:53 - Client 24927972652949393 disconnected
+19 Nov 22:08:43 - Initializing client with transport "xhr-polling"
+19 Nov 22:08:43 - Client 3170374787878245 connected
+19 Nov 22:09:54 - Client 3170374787878245 disconnected
+19 Nov 22:10:45 - Couldnt find client with session id "3170374787878245"
+19 Nov 22:10:46 - Couldnt find client with session id "3170374787878245"
+19 Nov 22:10:47 - Couldnt find client with session id "3170374787878245"
+19 Nov 23:27:29 - Initializing client with transport "websocket"
+19 Nov 23:27:29 - Client 49146301834844053 connected
+19 Nov 23:27:35 - Client 49146301834844053 disconnected
