@@ -1,25 +1,4 @@
-var socket = new io.Socket('sakura.mesolabs.com'),
-    json = JSON.stringify;
-
-socket.connect();
-socket.on('message', function(message) {
-  var data = JSON.parse(message);
-  console.log(message);
-  if (data.count) {
-    $('#count').text(data.count);
-  }
-  if (data.page) {
-    show(data.page);
-  }
-});
-
-function show(p) {
-  $('.slide').removeClass('active');
-  $('#' + p).addClass('active');
-}
-
 $(function() {
-  var winWidth = window.innerWidth;
   document.addEventListener('touchstart', start, false);
   document.addEventListener('touchmove', move, false);
   document.addEventListener('touchend', end, false);
@@ -55,10 +34,6 @@ $(function() {
         {page: nextId
         ,next: nextId
         ,now:  nowId}));
-      animateLeft(nowId, nextId);
-      return nextId;
-    } else {
-      return nowId;
     }
   }
 
@@ -70,10 +45,6 @@ $(function() {
         {page: prevId
         ,prev: prevId
         ,now:  nowId}));
-      animateRight(nowId, prevId);
-      return prevId;
-    } else {
-      return nowId;
     }
   }
 
@@ -91,26 +62,6 @@ $(function() {
     var p = id.slice(4);
     p--;
     return 'page' + p;
-  }
-
-  function animateLeft(nowId, nextId) {
-    $('#' + nowId).animate(
-      {left: (winWidth * -1) + 'px'},
-      500,
-      function() { $(this).removeClass('active') });
-    $('#' + nextId).css('left', winWidth).addClass('active').animate(
-      {left: 0},
-      500);
-  }
-
-  function animateRight(nowId, prevId) {
-    $('#' + nowId).animate(
-      {left: (winWidth * 1) + 'px'},
-      500,
-      function() { $(this).removeClass('active') });
-    $('#' + prevId).css('left', -1 * winWidth).addClass('active').animate(
-      {left: 0},
-      500);
   }
 
 });

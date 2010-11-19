@@ -68,6 +68,7 @@ socket.on('connection', function(client) {
     var data = JSON.parse(message);
     if (data.page) {
       p = data.page;
+      client.send(message);
       client.broadcast(message);
     }
   });
