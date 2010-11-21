@@ -1,4 +1,4 @@
-var socket = new io.Socket('sakura.mesolabs.com'),
+var socket = new io.Socket('localhost'),
     json = JSON.stringify,
     winWidth = window.innerWidth;
 

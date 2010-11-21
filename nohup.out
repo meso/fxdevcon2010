@@ -118,3 +118,37 @@ Express server listening on port 80
 20 Nov 00:20:51 - Initializing client with transport "websocket"
 20 Nov 00:20:51 - Client 6340165452565998 connected
 20 Nov 00:22:41 - Client 6461525016929954 disconnected
+
+node.js:63
+    throw e;
+    ^
+Error: EACCES, Permission denied
+    at Server.<anonymous> (net:1244:14)
+    at Server.<anonymous> (/home/meso/work/nave/installed/0.2.5/lib/node/.npm/connect/0.3.0/package/lib/connect/index.js:149:34)
+    at Server.listen (/home/meso/work/nave/installed/0.2.5/lib/node/.npm/express/1.0.0/package/lib/express/server.js:94:35)
+    at Object.<anonymous> (/home/meso/work/fxdevcon2010/app.js:54:7)
+    at Module._compile (node.js:462:23)
+    at Module._loadScriptSync (node.js:469:10)
+    at Module.loadSync (node.js:338:12)
+    at Object.runMain (node.js:522:24)
+    at Array.<anonymous> (node.js:756:12)
+    at EventEmitter._tickCallback (node.js:55:22)
+Express server listening on port 80
+21 Nov 05:17:42 - socket.io ready - accepting connections
+Express server listening on port 80
+21 Nov 05:17:46 - socket.io ready - accepting connections
+21 Nov 05:18:58 - Initializing client with transport "websocket"
+21 Nov 05:18:58 - Client 24655882036313415 connected
+21 Nov 05:19:05 - Client 24655882036313415 disconnected
+21 Nov 05:19:05 - Initializing client with transport "websocket"
+21 Nov 05:19:05 - Client 1732681249268353 connected
+21 Nov 05:20:42 - Client 1732681249268353 disconnected
+21 Nov 14:01:24 - Initializing client with transport "xhr-polling"
+21 Nov 14:01:24 - Client 5192569307982922 connected
+21 Nov 14:05:52 - Client 5192569307982922 disconnected
+21 Nov 15:36:12 - Initializing client with transport "websocket"
+21 Nov 15:36:12 - Client 4946754628326744 connected
+21 Nov 15:38:05 - Client 4946754628326744 disconnected
+21 Nov 15:38:24 - Initializing client with transport "websocket"
+21 Nov 15:38:24 - Client 9212546527851373 connected
+21 Nov 15:39:09 - Client 9212546527851373 disconnected
