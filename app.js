@@ -30,7 +30,7 @@ app.configure('production', function(){
 
 // Routes
 
-app.get('/fxdevcon2010', function(req, res){
+app.get('/', function(req, res){
   res.render('index.jade', {
     locals: {
         title: 'fxdevcon2010'
@@ -38,7 +38,7 @@ app.get('/fxdevcon2010', function(req, res){
   });
 });
 
-app.get('/fxdevcon2010/himitsu', function(req, res) {
+app.get('/himitsu', function(req, res) {
   res.render('index.jade', {
     locals: {
       title: 'fxdevcon2010 admin'
@@ -51,7 +51,7 @@ app.get('/fxdevcon2010/himitsu', function(req, res) {
 // Only listen on $ node app.js
 
 if (!module.parent) {
-  app.listen(80);
+  app.listen(3003);
   console.log("Express server listening on port %d", app.address().port)
 }
 
