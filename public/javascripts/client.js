@@ -1,4 +1,4 @@
-var socket = new io.Socket(),
+var socket = new io.Socket(null, {port: 3003}),
     json = JSON.stringify,
     winWidth = window.innerWidth;
 
